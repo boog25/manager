@@ -3,6 +3,7 @@ package ru.netology.manager;
 
 import org.junit.jupiter.api.Test;
 import ru.netology.domain.Movie;
+
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 
@@ -82,7 +83,7 @@ class MovieTest {
         movieManager.addMovie(eleven);
         movieManager.getAll();
         Movie[] actual = movieManager.getAll();
-        Movie[] expected = new Movie[]{eleven,then, nine, eight, seven, six, five, four, three, two};
+        Movie[] expected = new Movie[]{eleven, then, nine, eight, seven, six, five, four, three, two};
         assertArrayEquals(expected, actual);
     }
 
@@ -141,7 +142,7 @@ class MovieTest {
         movieManager.addMovie(then);
         movieManager.getAll();
         Movie[] actual = movieManager.getAll();
-        Movie[] expected = new Movie[]{then,nine, eight, seven, six};
+        Movie[] expected = new Movie[]{then, nine, eight, seven, six};
         assertArrayEquals(expected, actual);
     }
 }

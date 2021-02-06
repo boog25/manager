@@ -68,10 +68,11 @@ package ru.netology.manager;
 //    }
 //
 //}
-import org.junit.jupiter.api.Test;
-        import ru.netology.domain.Movie;
 
-        import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import ru.netology.domain.Movie;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class MovieManagerTest {
     MovieManager movieManager = new MovieManager();
@@ -211,7 +212,7 @@ class MovieManagerTest {
         movieManager.add(then);
         movieManager.getAll();
         Movie[] actual = movieManager.getAll();
-        Movie[] expected = new Movie[]{then,nine, eight, seven, six};
+        Movie[] expected = new Movie[]{then, nine, eight, seven, six};
         assertArrayEquals(expected, actual);
     }
 }

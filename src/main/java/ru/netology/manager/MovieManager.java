@@ -1,4 +1,5 @@
 package ru.netology.manager;
+
 import lombok.NoArgsConstructor;
 import lombok.Data;
 import ru.netology.domain.Movie;

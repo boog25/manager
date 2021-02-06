@@ -12,11 +12,12 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.18</version>
+            <version>1.18.12</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -62,7 +63,7 @@
                                     <element>PACKAGE</element>
                                     <limits>
                                         <limit>
-                                            <counter>BRANCH</counter>
+                                            <counter>BRANCHE</counter>
                                             <value>COVEREDRATIO</value>
                                             <minimum>100%</minimum>
                                         </limit>
@@ -82,6 +83,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
